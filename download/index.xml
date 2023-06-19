@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Download on Yoisun</title>
-    <link>http://example.org/download/</link>
+    <link>http://demo.yoisungroup.com/download/</link>
     <description>Recent content in Download on Yoisun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Jun 2023 19:08:30 +0800</lastBuildDate><atom:link href="http://example.org/download/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 Jun 2023 19:08:30 +0800</lastBuildDate><atom:link href="http://demo.yoisungroup.com/download/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
