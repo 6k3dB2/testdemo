@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flexible Tip Thermometer on Yoisun</title>
+    <link>http://example.org/product/digital-thermometer/flexible-tip-thermometer/</link>
+    <description>Recent content in Flexible Tip Thermometer on Yoisun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Jun 2023 10:41:14 +0800</lastBuildDate><atom:link href="http://example.org/product/digital-thermometer/flexible-tip-thermometer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demo5</title>
+      <link>http://example.org/product/digital-thermometer/flexible-tip-thermometer/demo52/</link>
+      <pubDate>Fri, 16 Jun 2023 13:01:17 +0800</pubDate>
+      
+      <guid>http://example.org/product/digital-thermometer/flexible-tip-thermometer/demo52/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demo5</title>
+      <link>http://example.org/product/digital-thermometer/flexible-tip-thermometer/demo5/</link>
+      <pubDate>Fri, 16 Jun 2023 13:01:17 +0800</pubDate>
+      
+      <guid>http://example.org/product/digital-thermometer/flexible-tip-thermometer/demo5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>http://example.org/product/digital-thermometer/flexible-tip-thermometer/demo/</link>
+      <pubDate>Thu, 15 Jun 2023 19:55:15 +0800</pubDate>
+      
+      <guid>http://example.org/product/digital-thermometer/flexible-tip-thermometer/demo/</guid>
+      <description>this is the summary</description>
+    </item>
+    
+  </channel>
+</rss>

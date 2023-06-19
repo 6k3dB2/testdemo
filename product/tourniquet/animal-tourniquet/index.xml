@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Animal Tourniquet on Yoisun</title>
+    <link>http://example.org/product/tourniquet/animal-tourniquet/</link>
+    <description>Recent content in Animal Tourniquet on Yoisun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Jun 2023 10:44:58 +0800</lastBuildDate><atom:link href="http://example.org/product/tourniquet/animal-tourniquet/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
