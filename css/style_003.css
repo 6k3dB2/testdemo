@@ -55,7 +55,7 @@ line-height: 35px; color: #333; }
 .nav-bar .nav li .nav-ico:after { content: '\f107'; }
 .nav-bar .nav li li .nav-ico { position: absolute; top: 0; right: 10px; line-height: 35px; }
 .nav-bar .nav li li .nav-ico:after { content: '\f105'; font-size: 12px; }
-.fixed-nav { position: fixed; width: 100%; top: 0; left: 0; margin: 0; -webkit-transition: top .5s; -moz-transition: top .5s; -o-transition: top .5s; transition: top .5s; -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .1); -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .1); box-shadow: 0 2px 2px rgba(0, 0, 0, .1); z-index: 10009; text-align: center; }
+.fixed-nav { position: fixed; width: 100%; top: 0; left: 0; margin: 0; -webkit-transition: top .5s; -moz-transition: top .5s; -o-transition: top .5s; transition: top .5s; -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .1); -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .1); box-shadow: 0 2px 2px rgba(0, 0, 0, .1); z-index: 10009; }
 .fixed-nav-appear { top: 0; }
 .fixed-nav .nav-wrap { width: 1200px; margin: 0 auto; position: relative; }
 .nav .ljj .sub-menu {
@@ -233,7 +233,7 @@ width: 100%; margin: 0; }
 .index_about .count_item:nth-of-type(4) .count_item_unit{font-size:1.375em;}
 .index_about .about_cell{justify-content:space-between;}
 .index_about .about_main{width:48.5%;float:left;}
-.index_about .about_desc{line-height:2em;}
+.index_about .about_desc{line-height:1.6em;}
 .index_about .about_thumbs{width:48%;float:right;}
 .index_about .sys_btn{min-width:240px;padding:.65em 1.8em;text-align:left;}
 .index_about .sys_btn:after{content:'\f101';font-family:'fontawesome';position:absolute;right:1.8em;top:.65em;}
