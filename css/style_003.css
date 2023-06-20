@@ -315,7 +315,7 @@ width: 100%; margin: 0; }
 .index_partner {}
 
 /* index_cert */
-.index_cert{    padding: 60px 0;background-repeat: no-repeat;background-position: center;-webkit-background-size: cover;background-size: cover;}
+.index_cert{padding: 60px 0 0 0;background-repeat: no-repeat;background-position: center;-webkit-background-size: cover;background-size: cover;}
 .index_cert .index_layer_hd{margin-bottom:1.5em;}
 .index_cert .layout{position:relative;}
 /*.index_cert .cert_items{justify-content:space-around;align-items:center;}*/

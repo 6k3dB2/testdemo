@@ -2,7 +2,7 @@
 body{ padding-bottom:71px;}
 .head-wrapper{z-index: 999999;}
 /*.web_head{display:none}*/
-.mobile-logo{ padding:15px 0; text-align:center;background-color: #fff;    background-color: #4f4f56;}
+.mobile-logo{ padding:15px 0; text-align:center;background-color: #fff;    background-color: #fff;}
 .mobile-logo img{ max-width:80%;width:auto;max-height: 32px;}
 .mobile-head-items{ height:auto;top:auto;bottom:0; background:#FFF;box-shadow:0 0 10px rgba(0,0,0,.2); z-index:9999989999999;}
 .mobile-head-item{ width:25%; }
