@@ -1,0 +1,4 @@
+/* Custom */
+.partner_slider.swiper-container-horizontal.swiper-container-multirow * {
+    box-sizing: border-box;
+}

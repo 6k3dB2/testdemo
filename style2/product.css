@@ -1,4 +1,4 @@
-@import url(//hello.myfonts.net/count/313e4c); @charset "UTF-8";a,article,body,div,h1,html,img,p {
+@charset "UTF-8";a,article,body,div,em,h1,html,img,p {
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -71,22 +71,7 @@ body {
     width: 50%
 }
 
-@media only screen and (max-width: 1030px) {
 
-    .ipadq--five-twelfths {
-        width: 41.666%
-    }
-
-    .ipadq--seven-twelfths {
-        width: 58.333%
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .iphone--one-whole {
-        width:100%
-    }
-}
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -113,9 +98,41 @@ a {
     text-decoration: none
 }
 
+em {
+    font-style: italic
+}
+
 body,html {
     height: 100%;
     position: relative
+}
+
+.sticky-footer {
+    clear: both;
+    height: auto!important;
+    height: 100%;
+    min-height: 100%
+}
+
+.footer-pusher,.sticky-footer {
+    position: relative
+}
+
+.headline {
+    font-size: 65px;
+    line-height: 1.2;
+    opacity: 1;
+    padding-bottom: 60px;
+    transition: opacity .25s linear
+}
+
+.headline {
+    display: block;
+    position: relative
+}
+
+.headline.no-space {
+    padding-bottom: 0
 }
 
 .headline-second {
@@ -126,20 +143,6 @@ body,html {
     position: relative
 }
 
-@media screen and (max-width: 800px) {
-
-    .headline-second {
-        font-size: 36px;
-        line-height: 1.2
-    }
-}
-
-@media screen and (max-width: 700px) {
-
-    .headline-second {
-        font-size: 30px
-    }
-}
 
 .max-width {
     display: block;
@@ -153,6 +156,18 @@ body,html {
 
 .max-width.middle {
     max-width: 1200px
+}
+
+.max-width.normal {
+    max-width: 960px
+}
+
+.text-align-center {
+    text-align: center
+}
+
+.color-blue {
+    color: #003da5
 }
 
 .button {
@@ -177,6 +192,55 @@ body,html {
     margin-right: 20px
 }
 
+.headline-header,.headline-header-inner {
+    display: block;
+    position: relative
+}
+
+.headline-header-inner {
+    padding-top: 50px
+}
+
+.headline-header-inner.with-header-info {
+    padding-left: 220px;
+    padding-right: 220px
+}
+
+
+.overview {
+    color: #323436;
+    counter-reset: overview-number;
+    padding: 30px 0
+}
+
+.overview,.overview article {
+    display: block;
+    position: relative
+}
+
+.overview article {
+    transition: opacity .25s linear
+}
+
+.overview article:after {
+    background-color: #f2f5f9;
+    bottom: 100px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+
+.overview img {
+    display: inline-block;
+    max-width: 100%;
+    position: relative;
+    vertical-align: middle;
+    z-index: 2
+}
+
 .overview-number {
     counter-increment: overview-number;
     display: block;
@@ -198,38 +262,7 @@ body,html {
     top: 75px
 }
 
-@media screen and (max-width: 1030px) {
 
-    .overview-number {
-        padding-bottom: 100px;
-        padding-right: 20px;
-        padding-top: 100px
-    }
-
-    .overview-number:before {
-        font-size: 90px;
-        height: 75px;
-        right: 20px;
-        top: 60px
-    }
-}
-
-@media screen and (max-width: 700px) {
-
-    .overview-number {
-        padding-bottom: 50px;
-        padding-right: 30px;
-        padding-top: 0
-    }
-
-    .overview-number:before {
-        font-size: 60px;
-        height: 55px;
-        left: auto;
-        right: 0;
-        top: -30px
-    }
-}
 
 .support-search input:placeholder {
     color: #53565a;
@@ -242,6 +275,12 @@ body,html {
 
 .support-search input::input-placeholder {
     color: #53565a
+}
+
+.header-placeholder {
+    display: block;
+    height: 70px;
+    position: relative
 }
 
 .navigation input:placeholder {
@@ -264,3 +303,112 @@ body,html {
     font-weight: 400;
     src: url(/style2/icomoon.ttf?kx2c91) format("truetype"),url(/style2/icomoon.woff?kx2c91) format("woff"),url(/style2/icomoon.svg?kx2c91#icomoon) format("svg")
 }
+
+
+@media screen and (max-width: 1030px) {
+    .headline {
+        font-size:48px
+    }
+
+    .headline-header-inner.with-header-info {
+        padding-left:0;
+        text-align: left!important
+    }
+
+
+    .overview {
+        padding-left:0;
+        padding-right: 0
+    }
+
+    .overview-number {
+        padding-bottom: 100px;
+        padding-right: 20px;
+        padding-top: 100px
+    }
+
+    .overview-number:before {
+        font-size: 90px;
+        height: 75px;
+        right: 20px;
+        top: 60px
+    }
+
+}
+@media only screen and (max-width: 1030px) {
+
+    .ipadq--five-twelfths {
+        width: 41.666%
+    }
+
+    .ipadq--seven-twelfths {
+        width: 58.333%
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .headline {
+        font-size: 42px;
+        line-height: 48px
+    }
+
+    .headline-second {
+        font-size: 36px;
+        line-height: 1.2
+    }
+}
+@media only screen and (max-width: 700px) {
+    .iphone--one-whole {
+        width:100%
+    }
+}
+@media screen and (max-width: 700px) {
+    .overview img {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0
+    }
+
+    .overview article:after {
+        display: none
+    }
+
+    .overview-number {
+        padding-bottom: 50px;
+        padding-right: 30px;
+        padding-top: 0
+    }
+
+    .overview-number:before {
+        font-size: 60px;
+        height: 55px;
+        left: auto;
+        right: 0;
+        top: -30px
+    }
+
+    .headline-header-inner {
+        padding-top:10px
+    }
+
+    .headline-header-inner.with-header-info {
+        padding-right: 0
+    }
+
+    .headline-header-inner.text-align-center {
+        text-align: center!important
+    }
+
+    .headline {
+        font-size:32px;
+        line-height: 36px;
+        padding-bottom: 25px
+    }
+
+    .headline-second {
+        font-size: 30px
+    }
+
+}
+
