@@ -1,0 +1,169 @@
+backend:
+  name: git-gateway
+local_backend: true
+  #name: github
+  #repo: ljzhsq2/demo
+# This line should *not* be indented
+# publish_mode: editorial_workflow
+media_folder: "static/uploads"
+public_folder: "/uploads"
+collections:
+  - name: 'product'
+    label: 'Product'
+    folder: 'content/product/'
+    create: true
+    path: '{{slug}}/index'
+    media_folder: '' # 留空上传到Hugo的page bundle
+    public_folder: '' # 留空上传到Hugo的page bundle
+    editor:
+      preview: true
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - { label: '草稿', name: "draft", widget: "boolean", default: false }
+      - { label: '标题', name: 'title', widget: 'string' }
+      - { label: 'URL', name: 'slug', widget: 'string',required: false }
+      - { label: '权重', name: 'weight', widget: 'number', default: 1000 }
+      - { label: '发布日期', name: 'date', widget: 'datetime' }
+      - label: "图片"
+        name: "images"
+        widget: "list"
+        field: {label: 图片, name: image, widget: image}
+      - label: "特点"
+        name: "feature"
+        widget: "list"
+        field: {label: 文本, name: text, widget: string}
+      - label: "关键词"
+        name: "keywords"
+        widget: "list"
+        field: {label: 文本, name: text, widget: string}
+      - { label: '描述', name: 'description', widget: 'string',required: false }
+      - { label: '内容', name: 'content', widget: 'markdown' }
+      - {label: 启用横幅, name: bannerEnable, widget: "boolean", default: false }
+      - {label: 横幅图片, name: bannerImage, widget: image,required: false }
+      - label: "横幅文字"
+        name: "bannerText"
+        widget: "list"
+        fields: 
+        - {label: 标题, name: title, widget: string}
+        - {label: 文本, name: content, widget: string}
+    # https://answers.netlify.com/t/i18n-nested-collections-doesnt-show-entire-collection/27704
+    # https://decapcms.org/docs/beta-features/#nested-collections最下方的代码
+  - name: 'news'
+    label: 'News'
+    folder: 'content/news/'
+    create: true
+    path: '{{slug}}/index'
+    media_folder: '' # 留空上传到Hugo的page bundle
+    public_folder: '' # 留空上传到Hugo的page bundle
+    editor:
+      preview: true
+    nested:
+      depth: 100 # max depth to show in the collection tree
+      summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
+    fields:
+      - { label: '草稿', name: "draft", widget: "boolean", default: false }
+      - { label: '标题', name: 'title', widget: 'string' }
+      - { label: 'URL', name: 'slug', widget: 'string',required: false }
+      - { label: '权重', name: 'weight', widget: 'number', default: 1000 }
+      - { label: '发布日期', name: 'date', widget: 'datetime' }
+      - label: "关键词"
+        name: "keywords"
+        widget: "list"
+        field: {label: 文本, name: text, widget: string}
+      - { label: '描述', name: 'description', widget: 'string',required: false }
+      - { label: '内容', name: 'content', widget: 'markdown' }
+  - name: 'page'
+    label: 'Page'
+    files: 
+      - file: 'themes/brighty-store-demo.myshopify.com/layouts/index.html'
+        label: 'Home'
+        name: "home"
+        fields:
+          - { label: '内容(非专业人员请勿修改，否则可能无法打开页面)', name: 'body', widget: 'text' }
+      - file: 'content/about-us/_index.html'
+        media_folder: '' # 留空上传到Hugo的page bundle
+        public_folder: '' # 留空上传到Hugo的page bundle
+        label: 'About Us'
+        name: "about-us"
+        fields:
+          - { label: '草稿', name: "draft", widget: "boolean", default: false }
+          - { label: '标题', name: 'title', widget: 'string' }
+          - { label: 'URL', name: 'url', widget: 'string' }
+          - { label: '发布日期', name: 'date', widget: 'datetime' }
+          - label: "关键词"
+            name: "keywords"
+            widget: "list"
+            field: {label: 文本, name: text, widget: string}
+          - { label: '描述', name: 'description', widget: 'string',required: false }
+          - { label: '内容(非专业人员请勿修改，否则可能无法打开页面)', name: 'body', widget: 'text' }
+          - label: "备注"
+            name: "remark"
+            widget: "list"
+            fields: 
+              - {label: 文本, name: text, widget: string}
+      - file: 'content/product/_index.html'
+        media_folder: '' # 留空上传到Hugo的page bundle
+        public_folder: '' # 留空上传到Hugo的page bundle
+        label: 'Product'
+        name: "product"
+        fields:
+          - { label: '自定义页面', name: "category_list", widget: "boolean", default: false }
+          - { label: '草稿', name: "draft", widget: "boolean", default: false }
+          - { label: '标题', name: 'title', widget: 'string' }
+          - { label: 'URL', name: 'url', widget: 'string' }
+          - { label: '发布日期', name: 'date', widget: 'datetime' }
+          - label: "关键词"
+            name: "keywords"
+            widget: "list"
+            field: {label: 文本, name: text, widget: string}
+          - { label: '描述', name: 'description', widget: 'string',required: false }
+          - { label: '内容(非专业人员请勿修改，否则可能无法打开页面)', name: 'body', widget: 'text' }
+          - label: "备注"
+            name: "remark"
+            widget: "list"
+            fields: 
+              - {label: 文本, name: text, widget: string}
+      - file: 'content/news/_index.html'
+        media_folder: '' # 留空上传到Hugo的page bundle
+        public_folder: '' # 留空上传到Hugo的page bundle
+        label: 'News'
+        name: "news"
+        fields:
+          - { label: '草稿', name: "draft", widget: "boolean", default: false }
+          - { label: '标题', name: 'title', widget: 'string' }
+          - { label: 'URL', name: 'url', widget: 'string' }
+          - { label: '发布日期', name: 'date', widget: 'datetime' }
+          - label: "关键词"
+            name: "keywords"
+            widget: "list"
+            field: {label: 文本, name: text, widget: string}
+          - { label: '描述', name: 'description', widget: 'string',required: false }
+          - { label: '内容(非专业人员请勿修改，否则可能无法打开页面)', name: 'body', widget: 'text' }
+          - label: "备注"
+            name: "remark"
+            widget: "list"
+            fields: 
+              - {label: 文本, name: text, widget: string}
+      - file: 'content/contact-us/_index.html'
+        media_folder: '' # 留空上传到Hugo的page bundle
+        public_folder: '' # 留空上传到Hugo的page bundle
+        label: 'Contact Us'
+        name: "contact-us"
+        fields:
+          - { label: '草稿', name: "draft", widget: "boolean", default: false }
+          - { label: '标题', name: 'title', widget: 'string' }
+          - { label: 'URL', name: 'url', widget: 'string' }
+          - { label: '发布日期', name: 'date', widget: 'datetime' }
+          - label: "关键词"
+            name: "keywords"
+            widget: "list"
+            field: {label: 文本, name: text, widget: string}
+          - { label: '描述', name: 'description', widget: 'string',required: false }
+          - { label: '内容(非专业人员请勿修改，否则可能无法打开页面)', name: 'body', widget: 'text' }
+          - label: "备注"
+            name: "remark"
+            widget: "list"
+            fields: 
+              - {label: 文本, name: text, widget: string}
